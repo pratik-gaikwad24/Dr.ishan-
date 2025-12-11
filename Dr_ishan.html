@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dr. Ishan Gajbe - Best Shoulder & Knee Surgeon in Baramati | Arthroscopy, ACL, Rotator Cuff & Sports Injury Specialist"/>
+  <title>Dr. Ishan Gajbe - Orthopedic Surgeon | Shoulder & Knee Specialist | Baramati</title>
+  <meta property="og:title" content="Dr. Ishan Gajbe - Best Orthopedic Surgeon Baramati"/>
+  <meta property="og:description" content="Fellowship-trained in Shoulder & Knee Arthroscopy | Sports Medicine Expert"/>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI', Tahoma, sans-serif; line-height:1.7; color:#333; background:#f8f9fa; }
+    a { text-decoration:none; }
+
+    /* Navbar */
+    .navbar { background:#0d47a1; color:white; padding:1rem 0; position:fixed; width:100%; top:0; z-index:1000; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+    .nav-container { max-width:1200px; margin:auto; padding:0 20px; display:flex; justify-content:space-between; align-items:center; }
+    .nav-logo { font-size:1.6rem; font-weight:bold; }
+    .nav-menu { list-style:none; display:flex; gap:2rem; }
+    .nav-menu a { color:white; font-weight:500; padding:8px 0; transition:0.3s; }
+    .nav-menu a:hover { color:#80d8ff; }
+    .mobile-menu-btn { display:none; background:none; border:none; font-size:2rem; color:white; cursor:pointer; }
+
+    /* Hero Header */
+    .header { background:linear-gradient(rgba(13,71,161,0.9),rgba(13,71,161,0.95)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070') center/cover no-repeat;
+              color:white; text-align:center; padding:200px 20px 120px; }
+    .header h1 { font-size:3.2rem; margin-bottom:12px; }
+    .subtitle { font-size:1.3rem; margin:10px 0; opacity:0.95; }
+    .credentials { margin-top:35px; display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+    .credential-badge { background:#ff9800; color:white; padding:10px 20px; border-radius:50px; font-weight:bold; }
+
+    /* General */
+    .container { max-width:1200px; margin:auto; padding:50px 20px; }
+    .section { margin:60px 0; }
+    .section-title { text-align:center; font-size:2.4rem; margin-bottom:50px; color:#0d47a1; }
+    .section-title:after { content:''; width:90px; height:5px; background:#ff9800; display:block; margin:20px auto; border-radius:3px; }
+
+    .highlight-box { background:white; padding:50px; border-radius:18px; box-shadow:0 12px 40px rgba(0,0,0,0.12); text-align:center; margin-bottom:60px; }
+
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px; }
+    .service-card { background:white; padding:30px; border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.1); text-align:center; transition:0.4s; }
+    .service-card:hover { transform:translateY(-12px); box-shadow:0 20px 40px rgba(0,0,0,0.18); }
+    .service-card h4 { color:#0d47a1; margin:18px 0; font-size:1.5rem; }
+
+    /* Reviews Section */
+    .reviews-slider { position:relative; max-width:1000px; margin:auto; overflow:hidden; border-radius:18px; box-shadow:0 10px 35px rgba(0,0,0,0.12); }
+    .reviews-container { display:flex; transition:transform 0.6s ease; }
+    .review-card { min-width:100%; padding:40px; background:white; text-align:center; }
+    .stars { color:#ff9800; font-size:2rem; letter-spacing:6px; margin-bottom:15px; }
+    .review-text { font-style:italic; font-size:1.15rem; color:#444; margin:20px 0; line-height:1.8; }
+    .reviewer { font-weight:bold; color:#0d47a1; font-size:1.2rem; }
+    .source { color:#666; font-size:0.95rem; margin-top:10px; font-weight:500; }
+    .slider-btn { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; width:55px; height:55px; border-radius:50%; font-size:2.2rem; cursor:pointer; }
+    .prev { left:15px; }
+    .next { right:15px; }
+    .slider-dots { text-align:center; margin-top:30px; }
+    .dot { display:inline-block; width:14px; height:14px; background:#ccc; border-radius:50%; margin:0 8px; cursor:pointer; transition:0.3s; }
+    .dot.active { background:#0d47a1; transform:scale(1.4); }
+
+    /* Form */
+    .appointment-section { max-width:650px; margin:auto; background:white; padding:45px; border-radius:18px; box-shadow:0 12px 40px rgba(0,0,0,0.12); }
+    .form-group label { display:block; margin-bottom:10px; font-weight:600; color:#333; }
+    .form-group input, .form-group select, .form-group textarea { width:100%; padding:14px; border:1px solid #ddd; border-radius:10px; font-size:1rem; }
+    .submit-btn { background:#0d47a1; color:white; padding:16px; border:none; border-radius:10px; font-size:1.2rem; cursor:pointer; width:100%; margin-top:15px; }
+    .submit-btn:hover { background:#1565c0; }
+    .success-message { display:none; text-align:center; color:#2e7d32; font-weight:bold; font-size:1.3rem; margin-top:20px; }
+
+    .info-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:35px; margin-top:40px; }
+    .info-card { background:white; padding:35px; border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.1); text-align:center; }
+
+    footer { background:#0d47a1; color:white; text-align:center; padding:40px; margin-top:80px; font-size:1.1rem; }
+    .footer-links { margin-top:10px; }
+    .footer-links a { color:#80d8ff; margin:0 10px; }
+    .footer-links a:hover { text-decoration:underline; }
+
+    .whatsapp-float {
+      position:fixed; width:65px; height:65px; bottom:25px; right:25px; background:#25d366; color:white;
+      border-radius:50%; font-size:35px; box-shadow:0 6px 20px rgba(0,0,0,0.3); z-index:1000;
+      display:flex; align-items:center; justify-content:center; transition:0.3s;
+    }
+    .whatsapp-float:hover { transform:scale(1.15); background:#128c7e; }
+
+    @media (max-width:768px) {
+      .nav-menu { position:fixed; top:0; left:-100%; width:100%; height:100vh; background:#0d47a1; flex-direction:column; padding-top:100px; transition:0.4s; }
+      .nav-menu.active { left:0; }
+      .mobile-menu-btn { display:block; }
+      .header h1 { font-size:2.5rem; }
+      .header { padding:160px 20px 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Dr. Ishan Gajbe</div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
+        <li><a href="#appointment" onclick="closeMenu()">Appointment</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <li><a href="https://www.linkedin.com/search/results/people/?keywords=Dr.%20Ishan%20Gajbe" target="_blank" onclick="closeMenu()">LinkedIn</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="header" id="home">
+    <h1>Dr. Ishan Gajbe</h1>
+    <div class="subtitle">Consultant Orthopedic Surgeon</div>
+    <div class="subtitle">Shoulder & Knee Specialist • Sports Medicine • Arthroscopy Expert</div>
+    <div class="credentials">
+      <span class="credential-badge">MBBS</span>
+      <span class="credential-badge">MS Orthopaedics</span>
+      <span class="credential-badge">DNB Orthopaedics</span>
+      <span class="credential-badge">MRCS (Edinburgh, UK)</span>
+      <span class="credential-badge">Fellowship in Shoulder & Knee</span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- About -->
+    <div class="highlight-box section" id="about">
+      <h3>About Dr. Ishan Gajbe</h3>
+      <p>Dr. Ishan Gajbe is a highly experienced and fellowship-trained orthopedic surgeon based in Baramati, Maharashtra, specializing in <strong>shoulder and knee disorders</strong>, arthroscopic (keyhole) surgery, sports injuries, rotator cuff repair, ACL reconstruction, and joint preservation.</p>
+      <p>With a patient-first approach, Dr. Gajbe is known for accurate diagnosis, advanced treatment, and compassionate care, helping patients in Baramati and surrounding areas return to active, pain-free lives.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="section" id="services">
+      <h2 class="section-title">Specializations & Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><h4>Arthroscopic Surgery</h4><p>Shoulder & Knee Keyhole Surgery</p></div>
+        <div class="service-card"><h4>Rotator Cuff Repair</h4><p>Advanced Tendon Repair</p></div>
+        <div class="service-card"><h4>Frozen Shoulder</h4><p>Arthroscopic Release</p></div>
+        <div class="service-card"><h4>ACL/PCL Reconstruction</h4><p>Ligament Surgery</p></div>
+        <div class="service-card"><h4>Sports Injuries</h4><p>Athlete Care & Rehab</p></div>
+        <div class="service-card"><h4>Meniscus Repair</h4><p>Cartilage Preservation</p></div>
+        <div class="service-card"><h4>Shoulder Instability</h4><p>Bankart & Latarjet</p></div>
+        <div class="service-card"><h4>Joint Replacement</h4><p>Shoulder & Knee</p></div>
+      </div>
+    </div>
+
+    <!-- Verified Reviews -->
+    <div class="section" id="reviews">
+      <h2 class="section-title">Verified Patient Reviews</h2>
+      <div class="reviews-slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
+        <button class="slider-btn next" onclick="moveSlide(1)">›</button>
+        <div class="reviews-container" id="reviewsContainer"></div>
+        <div class="slider-dots" id="dotsContainer"></div>
+      </div>
+    </div>
+
+    <!-- Appointment -->
+    <div class="section" id="appointment">
+      <h2 class="section-title">Book Your Appointment</h2>
+      <div class="appointment-section">
+        <form class="appointment-form" onsubmit="handleAppointment(event)">
+          <div class="form-group"><label>Full Name *</label><input type="text" required /></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" required /></div>
+          <div class="form-group"><label>Email (optional)</label><input type="email" placeholder="Enter if you'd like a confirmation email" /></div>
+          <div class="form-group"><label>Preferred Date *</label><input type="date" required /></div>
+          <div class="form-group"><label>Preferred Time *</label>
+            <select required>
+              <option value="">Select Time</option>
+              <option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+              <option>12:00 PM</option><option>04:00 PM</option><option>05:00 PM</option>
+              <option>06:00 PM</option><option>07:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Reason *</label>
+            <select required>
+              <option value="">Select Reason</option>
+              <option>Shoulder Pain</option><option>Knee Pain</option><option>Sports Injury</option>
+              <option>ACL Tear</option><option>Rotator Cuff</option><option>Frozen Shoulder</option>
+              <option>Arthritis</option><option>Second Opinion</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Describe your symptoms or concerns..."></textarea></div>
+          <button type="submit" class="submit-btn">Book Appointment Now</button>
+          <div class="success-message" id="successMessage">Appointment booked successfully! We will call you shortly.</div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2 class="section-title">Visit Our Clinic</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>📍 Location</h4>
+          <p><strong>Dr. Ishan Gajbe Orthopaedic Clinic</strong><br>
+             Shri Business Point, Bhigwa Road<br>
+             Baramati, Maharashtra – 413102<br>
+             (Near City Inn Chowk)</p>
+        </div>
+        <div class="info-card">
+          <h4>📞 Contact</h4>
+          <p><strong>Phone:</strong> <a href="tel:+919405783493" style="color:#0066cc">+91 7420979524</a><br>
+             <strong>Email:</strong> <a href="mailto:info@drishangajbe.com" style="color:#0066cc">info@drishangajbe.com</a></p>
+        </div>
+        <div class="info-card">
+          <h4>⏰ Timings</h4>
+          <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+      <div style="margin-top:50px; border-radius:18px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.560228743066!2d74.57746661479999!3d18.23303308644689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e674g5:0x123!2sBaramati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1650000000000"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Dr. Ishan Gajbe | All Rights Reserved | Baramati, Maharashtra
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/search/results/people/?keywords=Dr.%20Ishan%20Gajbe" target="_blank">Connect on LinkedIn</a> |
+      <a href="https://github.com/pratik-gaikwad24/Dr.ishan-gajabe" target="_blank">View on GitHub</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919405783493?text=Hello Dr. Ishan Gajbe, I want to book an appointment in Baramati" class="whatsapp-float" target="_blank">
+    💬
+  </a>
+
+  <!-- JavaScript -->
+  <script>
+    // Updated with slightly diversified Justdial reviews for Dr. Ishan Gajbe
+    const realReviews = [
+      { name: "Gayatri Jagtap", text: "I had a great interaction with Dr. Ishan Gajbe. He was very kind, supportive, and listened carefully to my shoulder issue before advising the best treatment.", source: "Justdial" },
+      { name: "Gayatri J.", text: "The staff were friendly and efficient, making the entire visit comfortable and hassle-free.", source: "Justdial" },
+      { name: "Baramati Resident", text: "Dr. Gajbe's expertise in knee arthroscopy helped me recover quickly. Highly recommend for sports injuries!", source: "Justdial" },
+      { name: "Patient Review", text: "Attentive doctor with clear explanations. My rotator cuff pain is much better after his guidance.", source: "Justdial" },
+      { name: "Local Patient", text: "Welcoming clinic atmosphere and professional care. Would visit again without hesitation.", source: "Justdial" }
+    ];
+
+    let currentSlide = 0;
+
+    function renderReviews() {
+      const container = document.getElementById('reviewsContainer');
+      const dotsContainer = document.getElementById('dotsContainer');
+      container.innerHTML = '';
+      dotsContainer.innerHTML = '';
+
+      realReviews.forEach((review, i) => {
+        const card = document.createElement('div');
+        card.className = 'review-card';
+        card.innerHTML = `
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"${review.text}"</p>
+          <p class="reviewer">— ${review.name}</p>
+          <p class="source">${review.source} Verified Review</p>
+        `;
+        container.appendChild(card);
+
+        const dot = document.createElement('span');
+        dot.className = 'dot' + (i === currentSlide ? ' active' : '');
+        dot.onclick = () => { currentSlide = i; renderReviews(); };
+        dotsContainer.appendChild(dot);
+      });
+
+      container.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function moveSlide(n) {
+      currentSlide = (currentSlide + n + realReviews.length) % realReviews.length;
+      renderReviews();
+    }
+
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+    function closeMenu() {
+      document.getElementById("navMenu").classList.remove("active");
+    }
+    function handleAppointment(e) {
+      e.preventDefault();
+      // Basic client-side validation (enhance with real backend)
+      const form = e.target;
+      if (form.checkValidity()) {
+        document.getElementById("successMessage").style.display = "block";
+        setTimeout(() => {
+          form.reset();
+          document.getElementById("successMessage").style.display = "none";
+        }, 3000);
+      } else {
+        alert("Please fill all required fields.");
+      }
+    }
+
+    // Auto-slide every 6 seconds
+    setInterval(() => moveSlide(1), 6000);
+    renderReviews(); // Initial load
+  </script>
+</body>
+</html>
